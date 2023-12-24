@@ -1,8 +1,17 @@
 {
     "name": "i-internet/yii2-special-day-decorator",
-    "description": "Special Day Decorator",
+    "description": "A Yii2 extension for decorating your application on special days like Christmas, New Year's Eve, etc., with custom content on request.",
     "type": "yii2-extension",
-    "keywords": ["yii2","extension"],
+    "keywords": [
+        "yii2",
+        "extension",
+        "holiday",
+        "decorator",
+        "festive",
+        "special day",
+        "custom content",
+        "UI enhancement"
+    ],
     "license": "Apache-2.0",
     "authors": [
         {
@@ -15,7 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "workaholicdevelopers\\specialdaydecorator\\": ""
+            "workaholicdevelopers\\specialdaydecorator\\": "src/"
+        }
+    },
+    "extra": {
+        "yii2-extension": {
+            "bootstrap": "workaholicdevelopers\\specialdaydecorator\\Bootstrap"
         }
     }
 }
