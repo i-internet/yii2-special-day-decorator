@@ -1,0 +1,21 @@
+{
+    "name": "i-internet/yii2-special-day-decorator",
+    "description": "Special Day Decorator",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Workaholic Developer",
+            "email": "workaholicdevelopers@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "workaholicdevelopers\\specialdaydecorator\\": ""
+        }
+    }
+}

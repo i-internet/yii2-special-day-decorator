@@ -1,0 +1,72 @@
+.christmas-loader-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    position: fixed; /* Fixed positioning relative to the viewport */
+    top: 50px;
+    right:60px;
+    z-index: 1000; /* High z-index to be on top */
+}
+
+.christmas-loader-wrapper > * {
+    position: relative;
+    z-index: 1001; /* Slightly higher than the wrapper to ensure it's above */
+}
+
+
+.christmas-loader__santa {
+    animation: 1.5s ease-in-out infinite alternate santa-bounce;
+}
+
+.christmas-loader__lead {
+    animation: 1.5s ease-in-out infinite alternate lead-tighten;
+}
+
+.christmas-loader__sleigh {
+    animation: 1.5s ease-in-out infinite alternate sleigh-ride;
+}
+
+.christmas-loader__reindeer {
+    animation: 3s ease-in-out infinite alternate reindeer-fly;
+}
+
+.christmas-loader__shoe {
+    animation: 1.5s cubic-bezier(0.5, 0.55, 0.5, 0.7) infinite alternate fly;
+}
+
+.christmas-loader__green-package {
+    animation: 1.5s cubic-bezier(0.7, 0.5, 0.5, 0.75) infinite alternate fly;
+}
+
+.christmas-loader__yellow-package {
+    animation: 1.5s cubic-bezier(0.6, 0.45, 0.5, 0.8) infinite alternate fly;
+}
+
+@keyframes reindeer-fly {
+    0% { transform: translate(0, 5%) rotate(-2deg); }
+    50% { transform: translate(-3%, -5%) rotate(2deg); }
+    100% { transform: translate(-3%, 15%) rotate(-2deg); }
+}
+
+@keyframes santa-bounce {
+    0% { transform: translateY(15%) scale(1.05, 0.95) rotate(-1deg); }
+    100% { transform: translateY(-20%); }
+}
+
+@keyframes lead-tighten {
+    0% { transform: translate(0, 10%) scaleX(1.05); }
+    100% { transform: translate(0, -32%) rotate(12deg) scaleX(1.10); }
+}
+
+@keyframes fly {
+    0% { transform: translateY(16%) scaleX(1.05); }
+    33% { transform: translateY(2%); }
+    100% { transform: translateY(-20%); }
+}
+
+@keyframes sleigh-ride {
+    0% { transform: translateY(15%) rotate(-4deg); }
+    100% { transform: translateY(-15%); }
+}
