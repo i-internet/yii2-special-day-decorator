@@ -5,13 +5,13 @@ namespace workaholicdevelopers\specialdaydecorator;
 use yii\web\AssetBundle;
 use yii\web\JqueryAsset;
 
-class DayDec25Asset extends  AssetBundle
+class DayJan01Asset extends  AssetBundle
 {
 
     public function init()
     {
         parent::init();
-        $this->sourcePath = __DIR__ . '/assets/dec_25';
+        $this->sourcePath = __DIR__ . '/assets/jan_01';
     }
 
     public $css = [
@@ -19,8 +19,7 @@ class DayDec25Asset extends  AssetBundle
     ];
 
     public $js = [
-        '//cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js',
-        "js/script.js"
+      //  "js/script.js"
     ];
 
     public $depends = [JqueryAsset::class];

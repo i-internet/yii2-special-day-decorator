@@ -52,7 +52,7 @@ class SpecialDayDecoratorWidget extends \yii\base\Widget
     {
         return [
             'dec-25', // Christmas
-          //  'jan-01'  // New Year
+            'jan-01'  // New Year
         ];
     }
 
