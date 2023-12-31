@@ -1,11 +1,7 @@
 # For Yii2 and PHP
 .settings
 .project
-uploads/
-tracker.lock
-timer.lock
 tests/_output/*
-/vendor
 .vscode/*
 .idea/*
 .DS_Store
@@ -15,11 +11,6 @@ tests/_output/*
 /mstile-*.png
 /browserconfig.xml
 /manifest.json
-/files/
-tenantsTimer/*.lock
-tenantsTimer/**/*.lock
-common.php
-last-cron-worked-at.txt
 
 # For NPM
 logs
